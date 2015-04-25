@@ -1,18 +1,18 @@
 {
   "name": "m.idnes.cz",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 2,
-  "description": "Odstranění reklamy na m.idnes.cz.",
+  "description": "Odstranění reklamy z mobilní verze idnes.cz.",
 	"icons": { "16": "i.png",
            "48": "idnes.png",
 					"128": "idnes.png"	},
 	"content_scripts": [
 			{
-				"matches": ["http://m.idnes.cz/*"],
+				"matches": ["http://*.idnes.cz/*"],
 				"css": ["idnes.css"]
 			}
 		],
   "permissions": [
-    "http://m.idnes.cz/"
+    "http://*.idnes.cz/"
   ]
 }
